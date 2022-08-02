@@ -14,4 +14,4 @@ console.log(personA.calcEdad());
 
 console.log(personA.printAll());
 
-// console.log(persona1.printHobbies());
+console.log(personA.printHobbies());
