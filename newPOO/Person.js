@@ -1,30 +1,35 @@
 class Person {
-  constructor(colorPelo, colorOjos, altura, peso, anyoNacimiento) {
+  constructor(colorPelo, colorOjos, peso, altura, anyoNacimiento, hobbies) {
     this.colorPelo = colorPelo;
     this.colorOjos = colorOjos;
-    this.height = altura;
     this.width = peso;
-    this.genero;
-    this.edad;
-    this.nacionalidad;
+    this.height = altura;
     this.yearOfBirth = anyoNacimiento;
+    this.hobbies = hobbies;
   }
 
   calcIMC() {
-    return (this.height * this.width) / 100;
+    return this.width / (this.height * this.height);
   }
 
   calcEdad() {
     const currentYear = new Date();
     const year = currentYear.getFullYear();
-    console.log(year);
 
     return year - this.yearOfBirth;
   }
+  printAll() {
+    console.log(`pelo - ${this.colorPelo}`);
+    console.log(`Ojos - ${this.colorOjos}`);
+    console.log(`height - ${this.height}`);
+    console.log(`width - ${this.width}`);
+    console.log(`yearOfBirth - ${this.yearOfBirth}`);
+    console.log(`hobbies - ${this.hobbies}`);
+  }
+
+  printHobbies() {
+    console.log(this.hobbies);
+  }
 }
 
-const persona1 = new Person("rojo", "Marrones", 174, 80, 1980);
-
-console.log(persona1.calcIMC());
-
-console.log(persona1.calcEdad());
+export { Person };
