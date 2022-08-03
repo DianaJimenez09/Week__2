@@ -1,6 +1,6 @@
 import { Person } from "./Personn";
 
-class Contacts {
+export class Contacts {
   public people: Person[];
 
   constructor() {
