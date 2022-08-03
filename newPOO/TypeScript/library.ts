@@ -39,6 +39,7 @@ export class Library {
     for (let i = 0; i < this.books.length; i++) {
       book = this.books[i].toString();
     }
+
     return book;
   }
 
@@ -51,7 +52,7 @@ export class Library {
     let autores = [];
     for (let i = 0; i < this.books.length; i++) {
       autor = this.books[i].getAuthor();
-      if (autor == author) {
+      if (autor === author) {
         autores.push(this.books[i]);
       }
     }
