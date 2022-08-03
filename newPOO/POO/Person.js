@@ -1,11 +1,11 @@
 class Person {
-  constructor(colorPelo, colorOjos, peso, altura, anyoNacimiento, hobbies) {
+  constructor(colorPelo, colorOjos, peso, altura, anyoNacimiento, []) {
     this.colorPelo = colorPelo;
     this.colorOjos = colorOjos;
     this.width = peso;
     this.height = altura;
     this.yearOfBirth = anyoNacimiento;
-    this.hobbies = hobbies;
+    this.hobbies = [];
   }
 
   calcIMC() {
@@ -28,7 +28,9 @@ class Person {
   }
 
   printHobbies() {
-    console.log(this.hobbies);
+    for (let i = 0; i < this.hobbies.length; i++) {
+      return this.hobbies;
+    }
   }
 }
 
