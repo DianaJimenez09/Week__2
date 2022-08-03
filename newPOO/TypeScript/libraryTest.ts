@@ -43,4 +43,4 @@ console.log(library3.getManager());
 
 console.log(library3.findByAuthor("F.Scott Fitzgerald"));
 
-console.log(library1.toString());
+library1.toString();
