@@ -1,6 +1,6 @@
-import { Person } from "./Personn";
+import { Personn } from "./Personn";
 
-let personA = new Person("Rosa", 28, "Madrid");
+let personA = new Personn("Rosa", 28, "Madrid");
 
 personA.printName();
 console.log(personA.yearOfBirth(2022));

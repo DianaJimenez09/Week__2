@@ -1,4 +1,4 @@
-export class Person {
+export class Personn {
   public name: string;
   public age: number;
   private address: string;
@@ -9,7 +9,7 @@ export class Person {
     this.address = address;
   }
 
-  public printName(): void {
+  public printName() {
     console.log(this.name);
   }
 
